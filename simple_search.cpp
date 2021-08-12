@@ -5,67 +5,67 @@
 
 int main()
 { 
-BEGIN: //»yªk 
-			char inputchar_2;//«Å§i¦r¦ê©Î¦r¤¸ (inputchar¥u¬O¥Nªí"¿é¤J«Å§iªº¦r¤¸©Î¦r¦ê"¡A¥i¥H´«¦¨¥ô·Nªº¦r¤¸¡A¤ñ¦p YESorNO ) 
+BEGIN: //èªžæ³• 
+			char inputchar_2;//å®£å‘Šå­—ä¸²æˆ–å­—å…ƒ (inputcharåªæ˜¯ä»£è¡¨"è¼¸å…¥å®£å‘Šçš„å­—å…ƒæˆ–å­—ä¸²"ï¼Œå¯ä»¥æ›æˆä»»æ„çš„å­—å…ƒï¼Œæ¯”å¦‚ YESorNO ) 
 			char Score='%d';
 			{
-			printf("¶Ù¼oª«¤j¾Ç¥Í¡A½Ð¿é¤J©pªº·L¿n¤À¦¨ÁZ~~");
+			printf("å—¨ï¼Œè«‹è¼¸å…¥å¦³çš„å¾®ç©åˆ†æˆç¸¾~~");
 			scanf("%d",&Score);
 	////
 				if(Score>=0)
 				switch(Score/10)
 				{
 					case 9:
-    				printf("®¥³ß®¥³ß!!©pªº¦¨ÁZ¬°Aµ¥¡A®¥³ß³q¹L~~\n");
-    					goto CONTINUE;                                              //goto ¬O±j¨î¸õÅDªº·N«ä 
-					return 0;//ª½±µ¸õ¥X°j°é¡A¥B¤£·|Ä~Äò°õ¦æ°j°é¥~ªºµ{¦¡ 
+    				printf("æ­å–œæ­å–œ!!å¦³çš„æˆç¸¾ç‚ºAç­‰ï¼Œæ­å–œé€šéŽ~~\n");
+    					goto CONTINUE;                                              //goto æ˜¯å¼·åˆ¶è·³èºçš„æ„æ€ 
+					return 0;//ç›´æŽ¥è·³å‡ºè¿´åœˆï¼Œä¸”ä¸æœƒç¹¼çºŒåŸ·è¡Œè¿´åœˆå¤–çš„ç¨‹å¼ 
 		
 					case 8:
-					printf("©pªº¦¨ÁZ¬°Bµ¥¡A®¥³ß³q¹L~~\n");
+					printf("å¦³çš„æˆç¸¾ç‚ºBç­‰ï¼Œæ­å–œé€šéŽ~~\n");
 						goto CONTINUE;
-					return 0;//ª½±µ¸õ¥X°j°é«á¡A·|°õ¦æ°j°é¥~ªºµ{¦¡ 
+					return 0;//ç›´æŽ¥è·³å‡ºè¿´åœˆå¾Œï¼ŒæœƒåŸ·è¡Œè¿´åœˆå¤–çš„ç¨‹å¼ 
 		
 					case 7:
-					printf("©pªº¦¨ÁZ¬°Cµ¥¡A®¥³ß³q¹L~~\n");
+					printf("å¦³çš„æˆç¸¾ç‚ºCç­‰ï¼Œæ­å–œé€šéŽ~~\n");
 					    goto CONTINUE;
 					return 0;
 		
 					case 6:
-					printf("©pªº¦¨ÁZ¬°Dµ¥¡A®¥³ß³q¹L~~\n");
+					printf("å¦³çš„æˆç¸¾ç‚ºDç­‰ï¼Œæ­å–œé€šéŽ~~\n");
 						goto CONTINUE;
 					return 0;
 	    
 					case 5:
-					printf("©pªº¦¨ÁZ¬°Eµ¥¡A®¥³ß³q¹L~~\n");
+					printf("å¦³çš„æˆç¸¾ç‚ºEç­‰ï¼Œæ­å–œé€šéŽ~~\n");
 					    goto CONTINUE;
 					return 0;
 		
 					default: //default
-					printf("©pªº¦¨ÁZ¬°Fµ¥....­«­×§a~~\n");	
+					printf("å¦³çš„æˆç¸¾ç‚ºFç­‰....é‡ä¿®å§~~\n");	
 		              	goto CONTINUE;		
  				}
     		}
 	////
-	/*....¦¨ÁZµ¥²Äµ{¦¡¼¶¼g³B....*/
+	/*....æˆç¸¾ç­‰ç¬¬ç¨‹å¼æ’°å¯«è™•....*/
 	////
 			if (Score<50) 
-			printf("§A³Q·íÅo ~ ~\n");
+			printf("ä½ è¢«ç•¶å›‰ ~ ~\n");
 				do
 				{
-				printf("­n­«­×¶Ü ~ ??(y/n)");
+				printf("è¦é‡ä¿®å—Ž ~ ??(y/n)");
 				inputchar_2=getchar();
-				getchar();//¦pªG¥u·Q¨ú±o¨Ï¥ÎªÌ¿é¤Jªº¦r¤¸¡A«h¥i¥H¨Ï¥Î getchar
-				break;//¥´§¹y or n¥H«á¡Aª½±µ²×¤îµ{¦¡ 
+				getchar();//å¦‚æžœåªæƒ³å–å¾—ä½¿ç”¨è€…è¼¸å…¥çš„å­—å…ƒï¼Œå‰‡å¯ä»¥ä½¿ç”¨ getchar
+				break;//æ‰“å®Œy or nä»¥å¾Œï¼Œç›´æŽ¥çµ‚æ­¢ç¨‹å¼ 
 				} 
 				while((inputchar_2!='y') and (inputchar_2!='n'));
-				printf("§ä§U±Ð°Q½×§a ~ \n");
+				printf("æ‰¾åŠ©æ•™è¨Žè«–å§ ~ \n");
 	
 			/*system("pause");*/
-CONTINUE: //ÀH«K³]ªº 
+CONTINUE: //éš¨ä¾¿è¨­çš„ 
 	        		char inputchar_3;
 					do
 					{
-					printf("­«·s¬d¸ß¦¨ÁZ¶Ü?(Y/N)");
+					printf("é‡æ–°æŸ¥è©¢æˆç¸¾å—Ž?(Y/N)");
 					inputchar_3=getchar();	
 					getchar();
 					break;
